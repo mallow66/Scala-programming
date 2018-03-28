@@ -1,0 +1,11 @@
+import scala.io._
+object ReadFromFiles {
+
+  def main(args : Array[String]) : Unit = {
+
+    for(line <- Source.fromFile("data.csv").getLines() )
+      println(line.length+ "    "+ line)
+
+  }
+
+}
